@@ -17,7 +17,7 @@ export interface ModalProps {
 	modalTitle: string;
 }
 
-export const Modal: FunctionComponent<ModalProps> = ({
+const Modal: FunctionComponent<ModalProps> = ({
 	isShown,
 	hide,
 	modalContent,
@@ -40,3 +40,5 @@ export const Modal: FunctionComponent<ModalProps> = ({
 
 	return isShown ? ReactDOM.createPortal(modal, document.body) : null;
 };
+
+export default Modal;
