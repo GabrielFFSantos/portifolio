@@ -6,6 +6,9 @@ import {
 	faSquareWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import styles from "../styles/Home.module.css";
+import { FaReact } from "react-icons/fa";
+import { SiJavascript, SiTypescript, SiPostgresql } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
 
 const Home = () => {
 	return (
@@ -21,21 +24,38 @@ const Home = () => {
 			<div className={styles.body}>
 				<div className={styles.header}>
 					<div className={styles.nav}>
-						<div className={styles.ul}> Sobre Mim </div>
-						<div className={styles.ul}> Contato </div>
+						<a href="#welcome_title" className={styles.ul}>
+							{" "}
+							Sobre Mim{" "}
+						</a>
+						<a href="#footer" className={styles.ul}>
+							{" "}
+							Contato{" "}
+						</a>
 					</div>
-					<div className={styles.ProfileImage} />
-					<h1 className={styles.WelcomeTitle}>
-						Olá sou Gabriel Filipe, Bem vindo ao meu portifólio!
-					</h1>
+					<div className={styles.PresentationBox}>
+						<div className={styles.summary}>
+							<h1 id="welcome_title" className={styles.WelcomeTitle}>
+								Seja Bem vindo ao meu portifólio!
+							</h1>
+							Este é um resumo sobre minha trajetória como desenvolvedor,
+							atualmente possuo conhecimento em Html, Css, Javascript e alguns
+							frameworks como React e NextJs, estou sempre em busca de novos
+							conhecimentos e desafios para aprimorar minhas habilidades e no
+							botão abaixo você pode ver um pouco sobre os projetos pessoais que
+							venho desenvolvendo.
+						</div>
+						<div className={styles.ProfileImage} />
+					</div>
 				</div>
-				<div className={styles.PresentationBox}>
-					<h2>Conhecimento em ////</h2>
-				</div>
+				{/* <div>
+					<button className={styles.projectsButton}>Projeto Star Coffe</button>
+				</div> */}
+
 				<div className={styles.CarroselBody}>
 					<div className={styles.card}>
 						<h3 className={styles.title}>Javascript</h3>
-						<div className={styles.Postgress} />
+						<SiJavascript className={styles.cardIcon} />
 						<div className={styles.bar}>
 							<div className={styles.emptybar}></div>
 							<div className={styles.filledbar}></div>
@@ -43,7 +63,7 @@ const Home = () => {
 					</div>
 					<div className={styles.card}>
 						<h3 className={styles.title}>React</h3>
-						<div className={styles.Postgress} />
+						<FaReact className={styles.cardIcon} />
 						<div className={styles.bar}>
 							<div className={styles.emptybar}></div>
 							<div className={styles.filledbar}></div>
@@ -51,7 +71,7 @@ const Home = () => {
 					</div>
 					<div className={styles.card}>
 						<h3 className={styles.title}>Next Js</h3>
-						<div className={styles.Postgress} />
+						<TbBrandNextjs className={styles.cardIcon} />
 						<div className={styles.bar}>
 							<div className={styles.emptybar}></div>
 							<div className={styles.filledbar}></div>
@@ -59,7 +79,7 @@ const Home = () => {
 					</div>
 					<div className={styles.card}>
 						<h3 className={styles.title}>Typescript</h3>
-						<div className={styles.Postgress} />
+						<SiTypescript className={styles.cardIcon} />
 						<div className={styles.bar}>
 							<div className={styles.emptybar}></div>
 							<div className={styles.filledbar}></div>
@@ -67,14 +87,14 @@ const Home = () => {
 					</div>
 					<div className={styles.card}>
 						<h3 className={styles.title}>Postgress</h3>
-						<div className={styles.Postgress} />
+						<SiPostgresql className={styles.cardIcon} />
 						<div className={styles.bar}>
 							<div className={styles.emptybar}></div>
 							<div className={styles.filledbar}></div>
 						</div>
 					</div>
 				</div>
-				<div className={styles.footer}>
+				<div id="footer" className={styles.footer}>
 					<FontAwesomeIcon
 						className={styles.icons}
 						icon={faSquareWhatsapp}

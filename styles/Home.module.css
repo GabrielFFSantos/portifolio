@@ -1,26 +1,52 @@
 .Background {
 	width: 100%;
 	height: 100vh;
-	background-color: #f8f6f4;
+	background: rgb(58, 52, 150);
+	background: linear-gradient(
+		90deg,
+		rgba(58, 52, 150, 1) 0%,
+		rgba(9, 9, 121, 1) 55%,
+		rgba(0, 212, 255, 1) 100%
+	);
+	animation: gradient 15s ease infinite;
+	background-size: 400% 400%;
 }
 
 .header {
+	width: 100%;
 	display: flex;
-	background-color: #1d3e5a;
-	align-items: center;
-	justify-content: center;
 	flex-wrap: wrap;
-    width: 100%;
+	align-content: center;
+	justify-content: center;
 }
 
 .nav {
-	width: 100%;
 	display: flex;
 	gap: 1rem;
-	align-items: center;
+	width: 100%;
 	justify-content: center;
-	background-color: aqua;
+	align-content: center;
+	background: linear-gradient(
+		90deg,
+		rgba(58, 52, 150, 0.2) 0%,
+		rgb(0, 0, 0) 55%,
+		rgba(0, 212, 255, 0.2) 100%
+	);
+	animation: gradient 15s ease infinite;
+	background-size: 400% 400%;
 	padding: 1rem;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .ul {
@@ -28,6 +54,7 @@
 	font-size: 20px;
 	font-weight: bold;
 	text-transform: uppercase;
+	cursor: pointer;
 }
 
 .ProfileImage {
@@ -43,9 +70,16 @@
 
 .WelcomeTitle {
 	color: #f8f6f4;
-	width: 100%;
 	text-align: center;
-	margin-bottom: 1rem;
+	font-family: "Brush Script MT", cursive;
+	margin-bottom: 10px;
+}
+
+.summary {
+	width: 50%;
+	text-align: justify;
+	font-size: 20px;
+	padding: 2rem;
 }
 
 .body {
@@ -55,10 +89,21 @@
 }
 
 .PresentationBox {
-	background-color: #319965;
+	display: flex;
+	flex-wrap: wrap;
 	width: 100%;
-	height: 100%;
+	justify-content: center;
+	align-content: center;
 }
+
+.projectsButton {
+	display: flex;
+	justify-self: center;
+	align-self: center;
+	padding-top: 20px;
+	padding-left: 100px;
+}
+
 
 .CarroselBody {
 	height: 100%;
@@ -78,11 +123,10 @@
 	display: flex;
 }
 
-.Postgress {
+.cardIcon {
 	width: 100%;
 	height: 80px;
 	justify-self: center;
-	background-color: tomato;
 }
 
 .card {
@@ -189,15 +233,15 @@
 	background-color: rgb(39, 39, 39);
 	display: flex;
 	justify-content: center;
-    align-items: center;
-    width: 100%;
+	align-items: center;
+	width: 100%;
 	padding: 1rem;
 	gap: 1rem;
-    font-size: 25px;
+	font-size: 25px;
 }
 
 .footerA {
-    font-size: 25px;
+	font-size: 25px;
 }
 
 .icons {
