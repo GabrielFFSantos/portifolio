@@ -10,7 +10,7 @@ import { FaReact } from "react-icons/fa";
 import { SiJavascript, SiTypescript, SiPostgresql } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import Modal from "./components";
-import useModal from "./components/useModal";
+import useModal from "../interfaces/useModal";
 import ModalForms from "./components/modalForms";
 
 const Home = () => {
