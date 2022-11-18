@@ -7,4 +7,5 @@ html,
   text-decoration: none;
   scroll-behavior: smooth;
   color-scheme: ligth only;
+  box-sizing: border-box;
 }
