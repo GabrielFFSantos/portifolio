@@ -43,7 +43,7 @@ export const Header = styled.div`
 	border-top-right-radius: 4px;
 	width: 100%;
 	height: 30px;
-	background: #736048;
+	background: rgb(9, 9, 121);
 	display: flex;
 	align-items: center;
 `;
@@ -57,7 +57,7 @@ export const Content = styled.div`
 `;
 
 export const ButtonModal = styled.div`
-	background: #736048;
+	background: rgb(9, 9, 121);
 	border: none;
 	color: aliceblue;
 	padding: 5px 10px;
@@ -95,4 +95,13 @@ export const ModalSection = styled.div`
 	label {
 		color: black;
 	}
+`;
+
+export const PlaceholderImg = styled.div`
+	background-image: url(/assets/image.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 400px;
+	height: 200px;
 `;

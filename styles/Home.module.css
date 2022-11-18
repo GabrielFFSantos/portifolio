@@ -59,7 +59,7 @@
 }
 
 .profileimage {
-	background-image: url(../public/assets/Placeholder.jpeg);
+	background-image: url(/assets/Placeholder.jpeg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
