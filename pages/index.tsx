@@ -9,9 +9,9 @@ import styles from "../styles/Home.module.css";
 import { FaReact } from "react-icons/fa";
 import { SiJavascript, SiTypescript, SiPostgresql } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
-import Modal from "./components";
+import Modal from "./components/modal";
 import useModal from "../interfaces/useModal";
-import ModalForms from "./components/modalForms";
+import ModalForms from "./components/modal/modalForms";
 
 const Home = () => {
 	const { isShown, toggle } = useModal();
@@ -60,8 +60,8 @@ const Home = () => {
 					</div>
 					<div className={styles.profileimage} />
 				</div>
-				<div className={styles.carroselbody} onClick={toggle}>
-					<div className={styles.card}>
+				<div className={styles.carroselbody}>
+					<div className={styles.card} onClick={toggle}>
 						<h3 className={styles.title}>Javascript</h3>
 						<SiJavascript className={styles.cardIcon} />
 						<div className={styles.bar}>
