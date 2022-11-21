@@ -1,13 +1,6 @@
 .background {
-	padding: 0;
-	margin: 0;
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-	color: #f8f6f4;
-	text-decoration: none;
-	scroll-behavior: smooth;
-	color-scheme: ligth only;
-	box-sizing: border-box;
-	width: 100vw;
+	width: 100%;
+	height: 100%;
 	background-repeat: repeat-y;
 	min-height: 100vh;
 	background: rgb(58, 52, 150);
@@ -35,11 +28,12 @@
 	width: 100%;
 	justify-content: center;
 	align-content: center;
+	background: rgb(58, 52, 150);
 	background: linear-gradient(
 		90deg,
-		rgba(58, 52, 150, 0.2) 0%,
-		rgba(0, 0, 0) 55%,
-		rgba(0, 212, 255, 0.2) 100%
+		rgba(58, 52, 150, 0.9) 0%,
+		rgba(0, 0, 238, 0.8) 55%,
+		rgba(0, 212, 255, 0.8) 100%
 	);
 	animation: gradient 15s ease infinite;
 	background-size: 400% 400%;
@@ -79,7 +73,6 @@
 .welcometitle {
 	color: #f8f6f4;
 	text-align: center;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	padding-bottom: 10px;
 }
 
@@ -240,8 +233,8 @@
 	padding: 1rem;
 	gap: 1rem;
 	font-size: 25px;
-	position: fixed;
 	bottom: 0;
+	position: absolute;
 }
 
 .footera {
