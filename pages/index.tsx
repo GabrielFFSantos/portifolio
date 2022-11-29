@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSquareGithub,
   faLinkedin,
-  faSquareWhatsapp,
+  faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import styles from "../styles/Home.module.css";
 import { Cards } from "./components/cards";
@@ -46,20 +46,17 @@ const Home = () => {
           </div>
           <div className={styles.profileimage} />
         </div>
-      <Cards />
+        <Cards />
+        <div className={styles.contactwhatsapp}>
+          <a href="https://whatsa.me/5531975075631/?t=Ol%C3%A1,%20vim%20pelo%20seu%20portif%C3%B3lio.">
+            <FontAwesomeIcon
+              className={styles.whatsappicon}
+              icon={faWhatsapp}
+            />
+          </a>
+        </div>
       </div>
       <div id="footer" className={styles.footer}>
-        <FontAwesomeIcon
-          className={styles.icons}
-          icon={faSquareWhatsapp}
-          id="icons"
-        />
-        <a
-          className={styles.footera}
-          href="https://whatsa.me/5531975075631/?t=Ol%C3%A1,%20vim%20pelo%20seu%20portif%C3%B3lio."
-        >
-          WhatsApp:(31) 9 7507-5631
-        </a>
         <FontAwesomeIcon
           className={styles.icons}
           icon={faSquareGithub}
