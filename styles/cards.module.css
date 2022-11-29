@@ -1,0 +1,71 @@
+.carroselbody {
+  height: 100%;
+  width: 100%;
+  top: 60px;
+  left: calc(50% - 300px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+.cardIcon {
+  width: 100%;
+  height: 80px;
+  justify-self: center;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  height: 200px;
+  width: 200px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+  cursor: pointer;
+}
+
+.card:not(:first-child) {
+  margin-left: -50px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  display: flex;
+  color: white;
+  font-weight: 300;
+  width: 100%;
+  left: 20px;
+  top: 15px;
+  gap: 1rem;
+  padding-left: 10px;
+  align-items: center;
+  justify-items: center;
+}
+
+.stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+.card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}

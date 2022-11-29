@@ -1,248 +1,135 @@
 .background {
-	width: 100%;
-	background-repeat: repeat-y;
-	min-height: 100vh;
-	background: rgb(58, 52, 150);
-	background: linear-gradient(
-		90deg,
-		rgba(58, 52, 150, 1) 0%,
-		rgba(9, 9, 121, 1) 55%,
-		rgba(0, 212, 255, 1) 100%
-	);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+  width: 100%;
+  background-repeat: repeat-y;
+  min-height: 100vh;
+  background: rgb(58, 52, 150);
+  background: linear-gradient(
+    90deg,
+    rgba(58, 52, 150, 1) 0%,
+    rgba(9, 9, 121, 1) 55%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
 .header {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	align-content: center;
-	justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
 }
 
 .nav {
-	display: flex;
-	gap: 1rem;
-	width: 100%;
-	justify-content: center;
-	align-content: center;
-	background: rgb(58, 52, 150);
-	background: linear-gradient(
-		90deg,
-		rgba(58, 52, 150, 0.9) 0%,
-		rgba(0, 0, 238, 0.8) 55%,
-		rgba(0, 212, 255, 0.8) 100%
-	);
-	animation: gradient 15s ease infinite;
-	background-size: 400% 400%;
-	padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  background: rgb(58, 52, 150);
+  background: linear-gradient(
+    90deg,
+    rgba(58, 52, 150, 0.9) 0%,
+    rgba(0, 0, 238, 0.8) 55%,
+    rgba(0, 212, 255, 0.8) 100%
+  );
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  padding: 1rem;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .ul {
-	text-align: center;
-	font-size: 20px;
-	font-weight: bold;
-	text-transform: uppercase;
-	cursor: pointer;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .profileimage {
-	background-image: url(/assets/Placeholder.jpeg);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 300px;
-	height: 300px;
-	border-radius: 50%;
+  background-image: url(/assets/Placeholder.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
 }
 
 .welcometitle {
-	color: #f8f6f4;
-	text-align: center;
-	padding-bottom: 10px;
+  color: #f8f6f4;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 .summary {
-	width: 50%;
-	text-align: justify;
-	font-size: 20px;
-	padding-right: 15px;
+  width: 50%;
+  text-align: justify;
+  font-size: 20px;
+  padding-right: 15px;
 }
 
 .presentationbox {
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-	justify-content: center;
-	align-content: center;
-	padding-top: 20px;
-	gap: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  padding-top: 20px;
+  gap: 60px;
 }
 
 .projectsbutton {
-	display: flex;
-	justify-self: center;
-	align-self: center;
-	padding-top: 20px;
-	padding-left: 100px;
-}
-
-.carroselbody {
-	height: 100%;
-	width: 100%;
-	top: 60px;
-	left: calc(50% - 300px);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding-bottom: 2rem;
-	padding-top: 1rem;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  padding-top: 20px;
+  padding-left: 100px;
 }
 
 .container {
-	height: 300px;
-	width: 600px;
-	top: 60px;
-	left: calc(50% - 300px);
-	display: flex;
-}
-
-.cardIcon {
-	width: 100%;
-	height: 80px;
-	justify-self: center;
-}
-
-.card {
-	display: flex;
-	flex-wrap: wrap;
-	height: 200px;
-	width: 200px;
-	background-color: #17141d;
-	border-radius: 10px;
-	box-shadow: -1rem 0 3rem #000;
-	transition: 0.4s ease-out;
-	position: relative;
-	left: 0px;
-	cursor: pointer;
-}
-
-.card:not(:first-child) {
-	margin-left: -50px;
-}
-
-.card:hover {
-	transform: translateY(-20px);
-	transition: 0.4s ease-out;
-}
-
-.card:hover ~ .card {
-	position: relative;
-	left: 50px;
-	transition: 0.4s ease-out;
-}
-
-.title {
-	display: flex;
-	color: white;
-	font-weight: 300;
-	width: 100%;
-	left: 20px;
-	top: 15px;
-	gap: 1rem;
-	padding-left: 10px;
-	align-items: center;
-	justify-items: center;
-}
-
-.bar {
-	position: absolute;
-	top: 170px;
-	left: 20px;
-	height: 5px;
-	width: 150px;
-}
-
-.emptybar {
-	background-color: #2e3033;
-	width: 100%;
-	height: 100%;
-}
-
-.filledbar {
-	position: absolute;
-	top: 0px;
-	z-index: 3;
-	width: 0px;
-	height: 100%;
-	background: rgb(0, 154, 217);
-	background: linear-gradient(
-		90deg,
-		rgba(0, 154, 217, 1) 0%,
-		rgba(217, 147, 0, 1) 65%,
-		rgba(255, 186, 0, 1) 100%
-	);
-	transition: 0.6s ease-out;
-}
-
-.card:hover .filledbar {
-	width: 120px;
-	transition: 0.4s ease-out;
-}
-
-.circle {
-	position: absolute;
-	top: 150px;
-	left: calc(50% - 60px);
-}
-
-.stroke {
-	stroke: white;
-	stroke-dasharray: 360;
-	stroke-dashoffset: 360;
-	transition: 0.6s ease-out;
+  height: 300px;
+  width: 600px;
+  top: 60px;
+  left: calc(50% - 300px);
+  display: flex;
 }
 
 .svg {
-	fill: #17141d;
-	stroke-width: 2px;
-}
-
-.card:hover .stroke {
-	stroke-dashoffset: 100;
-	transition: 0.6s ease-out;
+  fill: #17141d;
+  stroke-width: 2px;
 }
 
 .footer {
-	background-color: rgb(39, 39, 39);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	padding: 1rem;
-	gap: 1rem;
-	font-size: 25px;
-	bottom: 0;
-	position: relative;
+  background-color: rgb(39, 39, 39);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  gap: 1rem;
+  font-size: 25px;
+  bottom: 0;
+  position: relative;
 }
 
 .footera {
-	font-size: 25px;
+  font-size: 25px;
 }
 
 .icons {
-	height: 25px;
+  height: 25px;
 }
