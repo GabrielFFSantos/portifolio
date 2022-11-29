@@ -2,11 +2,11 @@ import { FaReact } from "react-icons/fa";
 import { SiJavascript, SiTypescript, SiPostgresql } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import styles from "styles/cards.module.css";
-import useModal from "./useModal";
-import Modal from "../pages/components/modal/index";
-import ModalForms from "./modalForms";
+import useModal from "../../../interfaces/useModal";
+import Modal from "../modal/index";
+import ModalForms from "../../../interfaces/modalForms";
 
-export const Cards = () => {
+const Cards = () => {
   const { isShown, toggle } = useModal();
   const content = ModalForms();
 
@@ -43,3 +43,5 @@ export const Cards = () => {
     </>
   );
 };
+
+export default Cards;

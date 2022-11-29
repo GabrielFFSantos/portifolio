@@ -6,7 +6,7 @@ import {
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import styles from "../styles/Home.module.css";
-import { Cards } from "../interfaces/cards";
+import Cards from "./components/cards/cards";
 
 const Home = () => {
   return (
