@@ -120,6 +120,7 @@
   justify-content: center;
   align-items: center;
   animation: 1s bounce infinite;
+  z-index: 100;
 }
 
 .whatsappicon {
